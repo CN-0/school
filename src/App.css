@@ -1,0 +1,124 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 1;
+    background-color: #eee;
+}
+
+.App {
+    margin: auto;
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: stretch;
+}
+
+.classes_list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.students_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    list-style-type: disc;
+}
+
+.student {
+    margin-right: 20px;
+    background-color: #eee;
+    padding: 6px 12px;
+    cursor: default;
+}
+
+.student:hover {
+    background-color: #ddd;
+}
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+
+.tooltip .content {
+    width: 180px;
+    height: 120px;
+    top: 380%;
+    left: 65%;
+    margin-left: 20px;
+    transform: translate(0, -50%);
+    padding: 10px 20px;
+    color: #eeeeee;
+    background-color: #535353ee;
+    position: absolute;
+    z-index: 99;
+    font-size: 11px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.tooltip:hover .content {
+    visibility: visible;
+    opacity: 1;
+}
+
+p {
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+}
+
+.sidebar {
+    width: 90px;
+    display: flex;
+    flex-grow: 1;
+    padding: 70px 30px;
+    background-color: #535353;
+    color: #fff;
+    position: relative;
+    font-weight: 600;
+}
+
+.sidebar .left {
+    margin-right: 20px;
+}
+
+.sidebar .right {
+    width: 150px;
+}
+
+.sidebar .left p {
+    padding: 5px 10px;
+}
+
+.sidebar .right p {
+    padding: 5px 10px;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    margin-block-start: 0;
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #fff;
+    color: #000;
+}
